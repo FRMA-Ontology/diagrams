@@ -29,30 +29,34 @@ window.app.layout = {
   template: `
     <div class='row mt-4 pt-4'>
 
-      <div class='col-sm-12 mt-3'>
+      <div class='col-sm-12'>
+        <h4>Conceptual Diagrams</h4>
+        <p class="lead mb-0">The diagrams describe the five sub-ontologies that complete the FRMA Ontology</p>
+        <small>You may zoom and pan each diagram.</small>
+      </div>
 
+      <div class='col-sm-12 mt-3'>
         <b-tabs lazy>
-          <b-tab class='text-light' title="HO Ontology">
-            <svg-viewer svgUrl="concept-maps/PFD.rdf.svg" />
-          </b-tab>
-          <b-tab class='text-light' title="IMG Ontology">
-            <svg-viewer svgUrl="concept-maps/IMG.rdf.svg" />
-          </b-tab>
-          <b-tab class='text-light' title="MLMO Ontology">
-            <svg-viewer svgUrl="concept-maps/MLMO.rdf.svg" />
-          </b-tab>
-          <b-tab class='text-light' title="PDF Ontology">
-            <svg-viewer svgUrl="concept-maps/PFD.rdf.svg" />
-          </b-tab>
-          <b-tab class='text-light' title="WT Ontology">
-            <svg-viewer svgUrl="concept-maps/WT.rdf.svg" />
+          <b-tab class='text-light' :title="ont.label" v-for="ont in ontologies" :key="ont.label">
+            <svg-viewer :svgUrl="ont.map" />
           </b-tab>
         </b-tabs>
-
       </div>
 
     </div>
-  `
+  `,
+  data () {
+    return {
+      ontologies: [
+        { label: 'Hair', map: 'concept-maps/oe_09/OE_9_HairOntology.rdf.svg' },
+        { label: 'Image', map: 'concept-maps/oe_09/OE_9_ImageOntology.rdf.svg' },
+        { label: 'Machine Learning Model', map: 'concept-maps/oe_09/OE_9_MachineLearningModelOntology.rdf.svg' },
+        { label: 'Person, Face, and Demographic', map: 'concept-maps/oe_09/OE_9_PersonFaceAndDemographicOntology.rdf.svg' },
+        { label: 'Wearable Things', map: 'concept-maps/oe_09/OE_9_WearableThingsOntology.rdf.svg' },
+        { label: 'FRMA', map: 'concept-maps/oe_09/OE_9_FRMA.rdf.svg' }
+      ]
+    }
+  }
 };
 
 window.app.splash = {
