@@ -52,8 +52,8 @@ window.app.layout = {
         { label: 'Image', map: 'concept-maps/oe_10/OE_X_ImageOntology.svg' },
         { label: 'Machine Learning Model', map: 'concept-maps/oe_10/OE_X_MachineLearningModelOntology.svg' },
         { label: 'Person, Face, and Demographic', map: 'concept-maps/oe_10/OE_X_PersonFaceAndDemographicOntology.svg' },
-        { label: 'Wearable Things', map: 'concept-maps/oe_10/OE_X_WearableThingsOntology.svg' }
-        // { label: 'FRMA', map: 'concept-maps/oe_10/OE_X_FRMA.svg' }
+        { label: 'Wearable Things', map: 'concept-maps/oe_10/OE_X_WearableThingsOntology.svg' },
+        { label: 'FRMA', map: 'concept-maps/oe_10/OE_X_FRMA.svg' }
       ]
     }
   }
