@@ -48,12 +48,12 @@ window.app.layout = {
   data () {
     return {
       ontologies: [
-        { label: 'Hair', map: 'concept-maps/oe_09/OE_9_HairOntology.rdf.svg' },
-        { label: 'Image', map: 'concept-maps/oe_09/OE_9_ImageOntology.rdf.svg' },
-        { label: 'Machine Learning Model', map: 'concept-maps/oe_09/OE_9_MachineLearningModelOntology.rdf.svg' },
-        { label: 'Person, Face, and Demographic', map: 'concept-maps/oe_09/OE_9_PersonFaceAndDemographicOntology.rdf.svg' },
-        { label: 'Wearable Things', map: 'concept-maps/oe_09/OE_9_WearableThingsOntology.rdf.svg' },
-        { label: 'FRMA', map: 'concept-maps/oe_09/OE_9_FRMA.rdf.svg' }
+        { label: 'Hair', map: 'concept-maps/oe_10/OE_X_HairOntology.svg' },
+        { label: 'Image', map: 'concept-maps/oe_10/OE_X_ImageOntology.svg' },
+        { label: 'Machine Learning Model', map: 'concept-maps/oe_10/OE_X_MachineLearningModelOntology.svg' },
+        { label: 'Person, Face, and Demographic', map: 'concept-maps/oe_10/OE_X_PersonFaceAndDemographicOntology.svg' },
+        { label: 'Wearable Things', map: 'concept-maps/oe_10/OE_X_WearableThingsOntology.svg' }
+        // { label: 'FRMA', map: 'concept-maps/oe_10/OE_X_FRMA.svg' }
       ]
     }
   }
