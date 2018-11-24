@@ -48,12 +48,11 @@ window.app.layout = {
   data () {
     return {
       ontologies: [
-        { label: 'Hair', map: 'concept-maps/oe_10/OE_X_HairOntology.svg' },
-        { label: 'Image', map: 'concept-maps/oe_10/OE_X_ImageOntology.svg' },
-        { label: 'Machine Learning Model', map: 'concept-maps/oe_10/OE_X_MachineLearningModelOntology.svg' },
-        { label: 'Person, Face, and Demographic', map: 'concept-maps/oe_10/OE_X_PersonFaceAndDemographicOntology.svg' },
-        { label: 'Wearable Things', map: 'concept-maps/oe_10/OE_X_WearableThingsOntology.svg' },
-        { label: 'FRMA', map: 'concept-maps/oe_10/OE_X_FRMA.svg' }
+        { label: 'Hair', map: 'concept-maps/oe_11/OE_X_HairOntology.rdf.svg' },
+        { label: 'Image', map: 'concept-maps/oe_11/OE_X_ImageOntology.rdf.svg' },
+        { label: 'Machine Learning Model', map: 'concept-maps/oe_11/OE_X_MachineLearningModelOntology.rdf.svg' },
+        { label: 'Person, Face, and Demographic', map: 'concept-maps/oe_11/OE_X_PersonFaceAndDemographicOntology.rdf.svg' },
+        { label: 'Wearable Things', map: 'concept-maps/oe_11/OE_X_WearableThingsOntology.rdf.svg' }
       ]
     }
   }
