@@ -9,7 +9,7 @@ Vue.component('svg-viewer', {
       id="demo-tiger"
       type="image/svg+xml"
       :data="svgUrl"
-      style="width: 100%; height: 400px; border:1px solid #f3f3f3; border-top:none;"
+      style="width: 100%; height: 75%; border:1px solid #f3f3f3; border-top:none;"
     >
       Your browser does not support SVG
     </object>
@@ -27,7 +27,7 @@ Vue.component('svg-viewer', {
 // Layout Component definition
 window.app.layout = {
   template: `
-    <div class='row mt-4 pt-4'>
+    <div class='row mt-2 pt-4'>
 
       <div class='col-sm-12'>
         <h4>Conceptual Diagrams</h4>
@@ -48,11 +48,12 @@ window.app.layout = {
   data () {
     return {
       ontologies: [
-        { label: 'Hair', map: 'concept-maps/oe_11/OE_X_HairOntology.rdf.svg' },
-        { label: 'Image', map: 'concept-maps/oe_11/OE_X_ImageOntology.rdf.svg' },
-        { label: 'Machine Learning Model', map: 'concept-maps/oe_11/OE_X_MachineLearningModelOntology.rdf.svg' },
-        { label: 'Person, Face, and Demographic', map: 'concept-maps/oe_11/OE_X_PersonFaceAndDemographicOntology.rdf.svg' },
-        { label: 'Wearable Things', map: 'concept-maps/oe_11/OE_X_WearableThingsOntology.rdf.svg' }
+        { label: 'Hair', map: 'concept-maps/oe_12/svg/OE_X_HairOntology-full.svg' },
+        { label: 'Image', map: 'concept-maps/oe_12/svg/OE_X_ImageOntology-full.svg' },
+        { label: 'Machine Learning Model', map: 'concept-maps/oe_12/svg/OE_X_MachineLearningModelOntology-full.svg' },
+        { label: 'Person, Face, and Demographic', map: 'concept-maps/oe_12/svg/OE_X_PersonFaceAndDemographicOntology-full.svg' },
+        { label: 'Wearable Things', map: 'concept-maps/oe_12/svg/OE_X_WearableThingsOntology-full.svg' },
+        { label: 'FRMA', map: 'concept-maps/oe_12/svg/OE_X_FRMA-full.svg' }
       ]
     }
   }
